@@ -1,0 +1,7 @@
+; FWDLL.def : Declares the module parameters for the DLL.
+
+LIBRARY      "FWDLL"
+;DESCRIPTION  'FWDLL Windows CE Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
