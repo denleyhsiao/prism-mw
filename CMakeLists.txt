@@ -15,3 +15,4 @@ add_library(${PROJECT_NAME}
   src/address.cpp
 )
 
+add_subdirectory(test)
