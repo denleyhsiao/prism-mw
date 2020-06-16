@@ -13,8 +13,8 @@ include_directories(
 )
 
 add_executable(${PROJECT_NAME_TEST}
-  main.cpp
-  address_test.cpp
+  src/main.cpp
+  src/address_test.cpp
 )
 
 target_link_libraries(${PROJECT_NAME_TEST}
