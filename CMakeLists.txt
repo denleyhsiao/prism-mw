@@ -13,6 +13,7 @@ include_directories(
 
 add_library(${PROJECT_NAME}
   src/address.cpp
+  src/fifo_scheduler.cpp
   src/round_robin_dispatcher.cpp
 )
 

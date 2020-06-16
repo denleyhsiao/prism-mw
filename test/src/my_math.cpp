@@ -1,4 +1,5 @@
 #include "my_math.h"
+#include "prism-mw/fifo_scheduler.h"
 #include "prism-mw/round_robin_dispatcher.h"
 #include <memory>
 
@@ -30,7 +31,8 @@ void MyMath::asyncStart()
 
 void MyMath::doStart()
 {
-  std::shared_ptr<Dispatcher> dispatcher(std::make_shared<RoundRobinDispatcher>(10));
+  std::shared_ptr<Scheduler> scheduler(std::make_shared<FIFOScheduler>(5));
+  std::shared_ptr<Dispatcher> dispatcher(std::make_shared<RoundRobinDispatcher>(10, scheduler));
 }
 
 void MyMath::stop()
