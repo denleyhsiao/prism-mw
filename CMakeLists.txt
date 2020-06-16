@@ -15,6 +15,7 @@ add_library(${PROJECT_NAME}
   src/address.cpp
   src/fifo_scheduler.cpp
   src/round_robin_dispatcher.cpp
+  src/event.cpp
 )
 
 add_subdirectory(test)

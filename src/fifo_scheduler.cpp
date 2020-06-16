@@ -1,4 +1,5 @@
 #include "prism-mw/fifo_scheduler.h"
+#include "prism-mw/event.h"
 
 FIFOScheduler::FIFOScheduler(unsigned int count) : count(count)
 {
