@@ -5,10 +5,14 @@ class MyMath
 {
 public:
   MyMath(int rhs, int lhs);
+  void start(bool sync  = false);
+  void stop();
   int add();
 
 private:
   void set(int rhs, int lhs);
+  void syncStart();
+  void asyncStart();
   int rhs;
   int lhs;
 };

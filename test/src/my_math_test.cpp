@@ -7,9 +7,11 @@ protected:
   virtual void SetUp()
   {
     math.reset(new MyMath(10, 5));
+    math->start();
   }
   virtual void TearDown()
   {
+    math->stop();
     math.reset(nullptr);
   }
 
