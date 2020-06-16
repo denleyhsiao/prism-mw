@@ -8,6 +8,7 @@ enable_testing()
 find_package(GTest REQUIRED)
 
 include_directories(
+  include
   ${GTEST_INCLUDE_DIR}
   ${CMAKE_SOURCE_DIR}/include
 )
@@ -15,6 +16,8 @@ include_directories(
 add_executable(${PROJECT_NAME_TEST}
   src/main.cpp
   src/address_test.cpp
+  src/my_math.cpp
+  src/my_math_test.cpp
 )
 
 target_link_libraries(${PROJECT_NAME_TEST}
