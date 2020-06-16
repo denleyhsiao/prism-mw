@@ -13,6 +13,7 @@ private:
   void set(int rhs, int lhs);
   void syncStart();
   void asyncStart();
+  void doStart();
   int rhs;
   int lhs;
 };

@@ -18,9 +18,15 @@ void MyMath::start(bool sync /* = false */)
 
 void MyMath::syncStart()
 {
+  doStart();
 }
 
 void MyMath::asyncStart()
+{
+  doStart();
+}
+
+void MyMath::doStart()
 {
 }
 
