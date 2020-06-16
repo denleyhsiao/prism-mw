@@ -13,6 +13,7 @@ include_directories(
 
 add_library(${PROJECT_NAME}
   src/address.cpp
+  src/round_robin_dispatcher.cpp
 )
 
 add_subdirectory(test)

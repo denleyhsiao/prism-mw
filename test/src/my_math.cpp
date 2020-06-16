@@ -1,4 +1,6 @@
 #include "my_math.h"
+#include "prism-mw/round_robin_dispatcher.h"
+#include <memory>
 
 MyMath::MyMath(int rhs, int lhs)
 {
@@ -28,6 +30,7 @@ void MyMath::asyncStart()
 
 void MyMath::doStart()
 {
+  std::shared_ptr<Dispatcher> dispatcher(std::make_shared<RoundRobinDispatcher>(10));
 }
 
 void MyMath::stop()
