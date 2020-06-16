@@ -8,6 +8,7 @@ public:
   int add();
 
 private:
+  void set(int rhs, int lhs);
   int rhs;
   int lhs;
 };
